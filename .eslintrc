@@ -1,0 +1,36 @@
+{
+    "root": true,
+    "env": {
+        "node": true
+    },
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "vuejs-accessibility"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:vue/vue3-recommended",
+        "plugin:vuejs-accessibility/recommended",
+        "prettier"
+    ],
+    "globals": {
+        "defineProps": "readonly",
+        "defineEmits": "readonly",
+        "defineExpose": "readonly",
+        "withDefaults": "readonly"
+    },
+    "rules": {
+        "vue/multi-word-component-names": "off",
+        "@typescript-eslint/no-explicit-any": "off"
+    },
+    "ignorePatterns": [
+        "node_modules",
+        "public",
+        ".vscode"
+    ]
+}
